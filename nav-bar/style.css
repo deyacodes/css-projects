@@ -17,6 +17,23 @@ nav .mobile {
     
 }
 
+nav .mobile .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    
+}
+
+
+nav .mobile .header .more button{
+    border: none;
+    background-color: black;
+    padding: 15px;
+    cursor: pointer;
+    
+}
+
 nav .logo {
     min-width: 250px;
 }
@@ -33,20 +50,55 @@ nav a:hover {
     background-color: #00c3ff;
 }
 
- nav .desktop {
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-     padding: 0 20px;
+nav .desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
 
 }
 
  nav .desktop .primary,
- nav .desktop .secundary {
+ nav .desktop .secondary {
      display: flex;
     
 }
 
 nav .desktop .secondary .min {
     display: none;
+}
+
+@media screen and (max-width: 853px){
+    nav .logo {
+        min-width: 100px;
+    }
+
+    nav .secondary .full {
+        display: none;
+    }
+    nav .secondary .min {
+        display: block !important;
+    }
+
+    nav .secondary .min .submenu {
+        background-color: black;
+        position: absolute;
+        display: none;
+        width: 180px;
+        right: 0;
+    }
+
+    nav .secondary .min:hover .submenu {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 500px){
+    nav .desktop{
+        display: none;
+    }
+    nav .mobile {
+        display: block;
+    }
+
 }
