@@ -5,6 +5,10 @@ body {
 
 }
 
+.collpased{
+    display: none;
+}
+
 nav {
     background-color: black;
     color: white;

@@ -15,14 +15,14 @@
             <div class="header">
                 <div class="logo">Logo</div>
                 <div class="more">
-                    <button>    
+                    <button id="bMore">    
                         <span class="material-icons-outlined">menu</span>
                     </button>
                 </div>
             </div>
         </div>
 
-        <div class="links">
+        <div id="links" class="links">
             <a href="#">Services</a>
             <a href="#">About</a>
             <a href="#">Contact</a>
@@ -57,5 +57,17 @@
             </div>
         </div>
     </nav> 
+<script text="script/javascript">
+const bMore = document.querySelector('#bMore');
+const links = document.querySelector('#links');
+bMore.addEventListener('click', (e)=>{
+    links.classList.toggle("collapsed");
+
+})
+
+</script>
+    
 </body>
+
+
 </html>
