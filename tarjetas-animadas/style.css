@@ -55,6 +55,18 @@ body{
     font-size: 28px;
 }
 
+.cards .card .footer .autor{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cards .card .footer img{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
 .cards .card[class*="element"]{
     margin-left: -100px;
 }
