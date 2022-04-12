@@ -12,7 +12,7 @@ body{
 }
 
 .cards .card {
-    background-color: cyan;
+    background-color: rgb(69, 102, 235);
     color: white;
     width: 300px;
     height: 350px;
@@ -23,5 +23,48 @@ body{
     display: flex;
     flex-direction: column;
     transition: all 0.3s ease;
+    box-shadow: -3px 0 10px rgba(0,0,0,0.3), 
+                -4px 0 10px rgba(0,0,0,0.2),
+                -5px 0 10px rgba(0,0,0,0.1);
 }
+
+.cards .card a {
+    color: yellow;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+.cards .card a:hover {
+    color: yellow;
+}
+
+.cards .card .header {
+    flex: 1;
+}
+
+.cards .card {
+    margin-right: 80px;
+    transform: rotate(3deg) translateY(-15px);
+}
+
+.cards .card .header .date {
+    padding: 10px 0;
+}
+
+.cards .card .header .title{
+    font-size: 28px;
+}
+
+.cards .card[class*="element"]{
+    margin-left: -100px;
+}
+
+.element-1:hover,
+.element-2:hover{
+    margin-left: -130px;
+}
+
+
+
+
 
